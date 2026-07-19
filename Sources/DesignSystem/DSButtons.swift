@@ -42,8 +42,9 @@ public struct DSGreyIconButtonStyle: ButtonStyle {
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.system(size: 20, weight: .medium))
+            .foregroundStyle(DSColors.darkGrey)
             .frame(width: 48, height: 48)
-            .glassEffect(.regular.interactive(), in: .circle)
+            .glassEffect(.regular, in: .circle)
     }
 }
 
